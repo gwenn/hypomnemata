@@ -1,0 +1,4 @@
+[ui]
+username = gwenn <FIXME@gmail.com>
+[extensions]
+hgext.extdiff =

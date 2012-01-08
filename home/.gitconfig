@@ -1,0 +1,17 @@
+[user]
+	name = gwenn
+	email = FIXME@gmail.com
+[color]
+#	diff = auto
+#	status = auto
+#	branch = auto
+	ui = auto
+[alias]
+	ci = commit
+	st = status
+	br = branch
+	co = checkout
+	df = diff
+[tool]
+	pager = less -FRX
+	merge = vimdiff

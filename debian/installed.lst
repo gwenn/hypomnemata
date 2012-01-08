@@ -1,0 +1,85 @@
+i   ack-grep                        - grep-like program specifically for large s
+i   acpi                            - displays information on ACPI devices      
+i   acpi-support                    - scripts for handling many ACPI events     
+i   alsa-base                       - ALSA driver configuration files           
+i   aptitude                        - terminal-based package manager (terminal i
+i   asunder                         - graphical audio CD ripper and encoder     
+i   bison                           - YACC-compatible parser generator          
+i   catdoc                          - MS-Word to TeX or plain text converter    
+i   chromium                        - Google's open source chromium web browser 
+i   configure-debian                - central configuration program for packages
+i   console-setup                   - console font and keymap setup program     
+i   cron                            - process scheduling daemon                 
+i   debconf                         - Debian configuration management system    
+i   deborphan                       - program that can find unused packages, e.g
+i   debtags                         - Enables support for package tags          
+i   discover                        - hardware identification system            
+i   exuberant-ctags                 - build tag file indexes of source code defi
+i   fbreader                        - e-book reader                             
+i   fdupes                          - identifies duplicate files within given di
+i   feh                             - imlib2 based image viewer                 
+i   firmware-realtek                - Binary firmware for Realtek wired and wire
+i   flashplugin-nonfree             - Adobe Flash Player - browser plugin       
+i   fonts-liberation                - Fonts with the same metrics as Times, Aria
+i   gcc                             - GNU C compiler                            
+i   gdisk                           - GPT fdisk text-mode partitioning tool     
+i   git                             - fast, scalable, distributed revision contr
+i   gparted                         - GNOME partition editor                    
+i   gpm                             - General Purpose Mouse interface           
+i   graphviz                        - rich set of graph drawing tools           
+i   grub-pc                         - GRand Unified Bootloader, version 2 (PC/BI
+i   htop                            - interactive processes viewer              
+i   intel-microcode                 - Processor microcode data file for Intel CP
+i   iotop                           - simple top-like I/O monitor               
+i   iproute                         - networking and traffic control tools      
+i   iputils-ping                    - Tools to test the reachability of network 
+i   isc-dhcp-client                 - ISC DHCP client                           
+i   lame                            - MP3 encoding library (frontend)           
+i   libreadline-dev                 - GNU readline and history libraries, develo
+i   libsqlite3-dev                  - SQLite 3 development files                
+i   libxml2-dev                     - Development files for the GNOME XML librar
+i   libxml2-utils                   - XML utilities                             
+i   linux-image-amd64               - Linux for 64-bit PCs (meta-package)       
+i   lm-sensors                      - utilities to read temperature/voltage/fan 
+i   lsof                            - List open files                           
+i   make                            - An utility for Directing compilation.     
+i   man-db                          - on-line manual pager                      
+i   mc                              - Midnight Commander - a powerful file manag
+i   meld                            - graphical tool to diff and merge files    
+i   mercurial                       - easy-to-use, scalable distributed version 
+i   mpg123                          - MPEG layer 1/2/3 audio player             
+i   ntpdate                         - client for setting system time from NTP se
+i   nvidia-settings                 - Tool for configuring the NVIDIA graphics d
+i   pandoc                          - general markup converter                  
+i   parted                          - disk partition manipulator                
+i   pkg-config                      - manage compile and link flags for librarie
+i   powertop                        - Linux tool to find out what is using power
+i   procps                          - /proc file system utilities               
+i   qbittorrent                     - bittorrent client based on libtorrent-rast
+i   rc                              - an implementation of the AT&T Plan 9 shell
+i   rcconf                          - Debian Runlevel configuration tool        
+i   rdiff-backup                    - remote incremental backup                 
+i   rsyslog                         - reliable system and kernel logging daemon 
+i   rxvt-unicode                    - RXVT-like terminal emulator with Unicode s
+i   setcd                           - Control the behaviour of your cdrom device
+i   smartmontools                   - control and monitor storage systems using 
+i   smplayer                        - complete front-end for MPlayer            
+i   sqlite3                         - Command line interface for SQLite 3       
+i   sqlite3-doc                     - SQLite 3 documentation                    
+i   ssh-askpass                     - under X, asks user for a passphrase for ss
+i   sudo                            - Provide limited super user privileges to s
+i   time                            - The GNU time program for measuring cpu res
+i   tuxcmd                          - twin-panel (commander-style) file manager 
+i   tuxcmd-modules                  - VFS modules for tuxcmd file manager       
+i   unzip                           - De-archiver for .zip files                
+i   upower                          - abstraction for power management          
+i   valgrind                        - memory debugger and profiler              
+i   vim-gtk                         - Vi IMproved - enhanced vi editor - with GT
+i   vorbis-tools                    - several Ogg Vorbis tools                  
+i   wmii                            - lightweight tabbed and tiled X11 window ma
+i   wodim                           - command line CD/DVD writing tool          
+i   wpasupplicant                   - client support for WPA and WPA2 (IEEE 802.
+i   wv                              - Programs for accessing Microsoft Word docu
+i   xinit                           - X server initialisation tool              
+i   xpdf                            - Portable Document Format (PDF) reader     
+i   zip                             - Archiver for .zip files                   
