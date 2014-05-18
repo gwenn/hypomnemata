@@ -1,0 +1,27 @@
+[TimeSheet|yearMonth]++-1..*>[TimeSheetLine]
+[TimeSheetLine]++-1..*>[TimeSheetLineEntry|workType;dayOfMonth]
+[TimeSheetLine]*-0..1>[Contract|client]
+[Invoice]++-1..*>[InvoiceLine]
+[Invoice]-0..1>[TimeSheet]
+[Invoice]-0..1>[Contract]
+[InvoiceLine]-0..1>[TimeSheetLine]
+[InvoiceLine]++-0..*>[InvoiceLineEntry|dayOfMonth]
+[Invoice]-reference 0..1>[Invoice]
+
+http://yuml.me/4a254f0f
+
+[TimeSheet]++-1..*>[TimeSheetLine]
+[TimeSheetLine]*-1>[Contract]
+[Invoice]++-1..*>[InvoiceLine]
+[Invoice]-~ 0..1>[TimeSheet]
+[Invoice]-1>[Contract]
+[InvoiceLine]-~ 0..1>[TimeSheetLine]
+
+http://yuml.me/7cfeba95
+
+[Contract]++-1..*>[ContractSchedule]
+[Invoice]++-1..*>[InvoiceLine]
+[Invoice]-1>[Contract]
+[InvoiceLine]-~ 0..1>[ContractSchedule]
+
+http://yuml.me/ff039f30

@@ -1,0 +1,64 @@
+digraph progs {
+size="11.7,8.3"
+fontname="Helvetica"
+fontcolor="lightgray"
+node [shape=plaintext, fontname="Helvetica"]
+compound=true
+rankdir=LR
+subgraph clusterLinux {
+label="Linux"
+Debian
+}
+subgraph clusterTools {
+label="Tools"
+Bash
+Git
+Graphviz
+Lemon
+Pandoc -> YST
+Pandoc -> Slidy
+Pandoc -> "Syntax Highlighting"
+SQLite
+Vim
+}
+Debian -> Bash [ltail=clusterLinux, lhead=clusterTools]
+subgraph clusterLibraries {
+label="Libraries"
+libpcre3
+libsqlite3
+libxml2 -> xmllint
+libxslt -> xsltproc
+}
+subgraph clusterLs {
+label="Languages"
+subgraph clusterPLs {
+label="Programming Languages"
+Go
+Javascript
+}
+subgraph clusterMLs {
+label="Markup Languages"
+Markdown
+}
+subgraph clusterTLs {
+label="Template Languages"
+ctemplate
+Mustache
+StringTemplate
+}
+Dot
+}
+Pandoc -> Markdown
+Graphviz -> Dot
+subgraph clusterProjects {
+label="Own Projects"
+"sqlite-csv-ext"
+csvdiff
+csvgrep
+murmurhash3
+sqlitejdbc
+}
+libsqlite3 -> SQLite
+libsqlite3 -> "sqlite-csv-ext"
+Go -> csvgrep
+}

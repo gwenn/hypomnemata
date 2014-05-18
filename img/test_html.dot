@@ -1,0 +1,36 @@
+digraph structs {
+node [
+shape=Mrecord
+];
+
+    struct1 [label=<
+<table>
+  <tr><td>left</td><td port="f1">mid dle</td><td port="f2">right</td></tr>
+</table>>];
+
+/*
+    struct2 [label=<
+<table>
+  <tr><td port="f0">one</td><td>two</td></tr>
+</table>>];
+
+    struct3 [label=<
+<table>
+  <tr>
+    <td rowspan="3">hello<BR/>world</td>
+    <td colspan="3">b</td>
+    <td rowspan="3">g</td>
+    <td rowspan="3">h</td>
+  </tr>
+  <tr>
+    <td>c</td><td port="here">d</td><td>e</td>
+  </tr>
+  <tr>
+    <td colspan="3">f</td>
+  </tr>
+</table>>];
+
+    struct1:f1 -> struct2:f0;
+    struct1:f2 -> struct3:here;
+*/
+}

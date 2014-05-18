@@ -1,0 +1,136 @@
+digraph schema {
+rankdir=LR
+labelloc=t
+node [
+shape=Mrecord
+fontsize=10
+fontname="Arial"
+]
+edge [
+arrowsize=0.9
+]
+
+label="TODO\n\n"
+
+
+racer [
+label=<
+<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+ <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">racer</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+ <tr><td align="left" width="130" port="id">id</td></tr>
+ <tr><td align="left" width="130">number</td></tr>
+ <tr><td align="left" width="130">country</td></tr>
+ <tr><td align="left" width="130">city</td></tr>
+ <tr><td align="left" width="130">company</td></tr>
+ <tr><td align="left" width="130">gender</td></tr>
+ <tr><td align="left" width="130">firstName</td></tr>
+ <tr><td align="left" width="130">lastName</td></tr>
+ <tr><td align="left" width="130">nickName</td></tr>
+
+</table>>];
+
+race [
+label=<
+<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+ <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">race</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+ <tr><td align="left" width="130" port="id">id</td></tr>
+ <tr><td align="left" width="130">name</td></tr>
+ <tr><td align="left" width="130">intervalStarts</td></tr>
+ <tr><td align="left" width="130">startTime</td></tr>
+ <tr><td align="left" width="130">status</td></tr>
+
+</table>>];
+
+timelog [
+label=<
+<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+ <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">timelog</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+ <tr><td align="left" width="130" port="raceId">raceId</td></tr>
+ <tr><td align="left" width="130" port="racerId">racerId</td></tr>
+ <tr><td align="left" width="130">time</td></tr>
+ <tr><td align="left" width="130">type</td></tr>
+
+</table>>];
+
+position [
+label=<
+<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+ <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">position</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+ <tr><td align="left" width="130" port="raceId">raceId</td></tr>
+ <tr><td align="left" width="130" port="racerId">racerId</td></tr>
+ <tr><td align="left" width="130">nb</td></tr>
+ <tr><td align="left" width="130">duration</td></tr>
+
+</table>>];
+
+resultVersion [
+label=<
+<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+ <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">resultVersion</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+ <tr><td align="left" width="130" port="raceId">raceId</td></tr>
+ <tr><td align="left" width="130">time</td></tr>
+
+</table>>];
+
+result [
+label=<
+<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+ <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">result</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+ <tr><td align="left" width="130">type</td></tr>
+ <tr><td align="left" width="130" port="raceId">raceId</td></tr>
+ <tr><td align="left" width="130" port="racerId">racerId</td></tr>
+ <tr><td align="left" width="130">nb</td></tr>
+ <tr><td align="left" width="130">duration</td></tr>
+ <tr><td align="left" width="130">rank</td></tr>
+ <tr><td align="left" width="130">prevRank</td></tr>
+ <tr><td align="left" width="130">latency</td></tr>
+
+</table>>];
+
+resultHisto [
+label=<
+<table border="0" align="center" cellspacing="0.5" cellpadding="0" width="134">
+ <tr><td align="center" valign="bottom" width="130"><font face="Arial Bold" point-size="11">resultHisto</font></td></tr>
+</table>
+|
+<table border="0" align="left" cellspacing="2" cellpadding="0" width="134">
+ <tr><td align="left" width="130">type</td></tr>
+ <tr><td align="left" width="130" port="raceId">raceId</td></tr>
+ <tr><td align="left" width="130" port="racerId">racerId</td></tr>
+ <tr><td align="left" width="130">rank</td></tr>
+ <tr><td align="left" width="130">prevRank</td></tr>
+ <tr><td align="left" width="130">latency</td></tr>
+
+</table>>];
+
+
+timelog:racerId -> racer:id;
+timelog:raceId -> race:id;
+position:racerId -> racer:id;
+position:raceId -> race:id;
+resultVersion:raceId -> race:id;
+result:racerId -> racer:id;
+result:raceId -> race:id;
+resultHisto:racerId -> racer:id;
+resultHisto:raceId -> race:id;
+
+}
+

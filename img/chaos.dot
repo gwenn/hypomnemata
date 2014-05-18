@@ -1,0 +1,15 @@
+digraph chaos {
+  node [shape=box];
+
+  ordre [label="ordre dans l'espace de phase"];
+  chaos [label="chaos déterministe"];
+  sensibilite [label="sensibilité aux conditions initiales"];
+  loi [label="loi d'intéraction précise"];
+  conditions [label="conditions initiales imprécises"];
+  
+  chaos -> ordre;
+  sensibilite -> chaos;
+  loi -> sensibilite;
+  conditions -> sensibilite;
+  rankdir=BT;
+}

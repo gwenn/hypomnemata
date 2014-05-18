@@ -1,0 +1,33 @@
+digraph sillycat {
+  pd -> xp -> xe1;
+  pd [label="Presentation\nData",style=filled];
+  xp [label="XML\nParser",shape=box];
+  xe1[label="XML\nEvents"];
+
+  xe1 -> xeh -> {et xe2};
+  xeh [label="XML Event\nHandler",shape=box];
+  et [label="Eruby Template",style=filled];
+  xe2 [label="XML\nEvents"];
+
+  xe2 -> ds -> {xe1 d};
+  ds [label="Directive\nScanner",shape=box];
+  d [label="Directives"];
+
+  pl -> {ri rp}
+  pl [label="Presentation\nLogic",style=filled];
+  ri [label="Ruby\nInterpreter",shape=box];
+  rp [label="Ruby\nParser",shape=box]
+
+  ri -> ed;
+  ed [label="{Element\nDeclarations}"];
+  rp -> re;
+  re [label="Ruby\nEvents"];
+
+  ed -> i;
+  d -> i;
+  re -> i;
+  i [label="Injector",shape=box];
+  i -> xe1;
+
+  {rank=same; xp ri rp}
+}
