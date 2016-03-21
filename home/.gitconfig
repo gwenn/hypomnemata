@@ -15,3 +15,7 @@
 [tool]
 	pager = less -FRX
 	merge = vimdiff
+[http]
+#	proxy = http://USER:PASSWORD@SERVER:PORT
+[https]
+#	proxy = http://USER:PASSWORD@SERVER:PORT
